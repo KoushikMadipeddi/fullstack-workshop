@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        height: 660px;
+        width: 350px;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="" /> -->
+  </head>
+  <body>
+    <fieldset style="background-color: powderblue">
+      <legend style="color: brown">Registration Form</legend>
+      <form action="http://www.google.com" method="post" autocomplete="on">
+        <!--withou using autocomplete we get suggestion because of browser chache-->
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" enter name"
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <!-- <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder=" enter name"><br> -->
+
+          <tr>
+            <td><label for="lname">LastName:</label></td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="enter lastname"
+              />
+            </td>
+          </tr>
+
+          <!-- <label for="lname">LName:</label>
+            <input type="text" id="lname" name="lname" placeholder="enter lastname"><br> -->
+
+          <tr>
+            <td><label for="phno">Phone.No:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phno"
+                name="phno"
+                placeholder="+91-xxxxx-xxxxx"
+                minlength="10"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+
+          <!-- <label for="phno">Phone.No:</label>
+            <input type="tel" id="phno" name="phno" placeholder="+91-xxxxx-xxxxx"><br> -->
+
+          <!-- <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="enter age"
+              />
+            </td>
+          </tr> -->
+
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input list="age" placeholder="select">
+              <datalist id="age">
+                <option value="under 18">under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+              </datalist>
+            </td>
+          </tr>
+
+
+          <!-- <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="enter age" ><br> -->
+
+          <tr>
+            <td><label for="add">Address:</label></td>
+            <td>
+              <textarea
+                name="add"
+                id="add"
+                column="33"
+                rows="2"
+                placeholder="area,street,pincode,H-no...,"
+                readonly
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- <label for="add">Address:</label>
+            <textarea name="add" id="add" column="33" rows="2" placeholder="area,street,pincode,H-no...,"></textarea><br> -->
+
+          <tr>
+            <td><label for="mail">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                value="koushikmadipeddi@gmail.com"
+                readonly
+              />
+            </td>
+          </tr>
+
+          <!-- <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="koxxxxx@gmail.com"><br> -->
+
+          <tr>
+            <td><label for="pass">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                placeholder="enter password"
+                pattern="[0-9]{10}"
+                title="given pattern is 12345"
+              />
+            </td>
+          </tr>
+
+          <!-- <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" placeholder="enter password"><br> -->
+
+          <tr>
+            <td><label for="sex">Gender:</label></td>
+            <td>
+              <input type="radio" id="sex" name="sex" checked />male
+              <input type="radio" name="sex" id="sex"/>female
+            </td>
+          </tr>
+
+          <!-- <label for="sex">Gender:</label>
+            <input type="radio" id="sex" name="sex">male <input type="radio" name="sex" id="sex">female <br> -->
+          <tr>
+            <td><label for="dob">D.O.B:</label></td>
+            <td>
+              <input type="datetime-local" id="dob" name="dob" disabled />
+            </td>
+          </tr>
+          <!-- <label for="dob">D.O.B:</label>
+            <input type="datetime-local" id="dob" name="dob"><br> -->
+          <tr>
+            <td><label for="time">Time:</label></td>
+            <td><input type="time" id="time" name="time" /></td>
+          </tr>
+          <!-- <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br> -->
+          <tr>
+            <td><label for="check">Hobbies:</label></td>
+            <td>
+              <input type="checkbox" id="check" name="check" /> playing
+              <input type="checkbox" id="check" name="check" /> Gaming
+            </td>
+          </tr>
+          <!-- <label for="check">Hobbies:</label>
+            <input type="checkbox" id="check" name="check"> playing <input type="checkbox" id="check" name="check"> Gaming <br> -->
+          <tr>
+            <td><label for="crouse">Course</label></td>
+            <td>
+              <select name="Course" id="crouse">
+                <option value="java">Java</option>
+                <option value="python">python</option>
+                <option value="sql">SQL</option>
+                <option value="web">web-tech</option>
+              </select>
+            </td>
+          </tr>
+          <!-- <input type="" id="course" name="course"> -->
+          <!-- <label for="crouse">Course</label>
+             <select name="Course" id="crouse">
+                <option value="java">Java</option>
+                <option value="python">python</option>
+                <option value="sql">SQL</option>
+                <option value="web">web-tech</option>
+             </select><br> -->
+
+          <tr>
+            <td><label for="course1">Course1</label></td>
+            <td>
+              <input list="course1" placeholder="select" />
+              <datalist id="course1">
+                <option value="b.tech"><b class="tech"></b></option>
+                <option value="mca">mca</option>
+                <option value="mba">mba</option>
+                <option value="m.tech"><m class="tech"></m></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="file">Resume:</label></td>
+            <td><input type="file" id="file" name="file" /></td>
+          </tr>
+          <!-- <label for="file">Resume:</label>
+             <input type="file" id="file" name="file"><br> -->
+          <tr>
+            <td><label for="search">Search:</label></td>
+            <td>
+              <input type="search" id="search" name="search" value=".com" />
+            </td>
+          </tr>
+          <!-- <label for="search">Search:</label>
+             <input type="search" id="search" name="search"><br> -->
+          <tr>
+            <td><label for="url">URL:</label></td>
+            <td><input type="url" id="url" name="url" /></td>
+          </tr>
+          <!-- <label for="url">URL:</label>
+             <input type="url" id="url" name="url"><br> -->
+
+          <tr>
+            <td><label for="img">Image:</label></td>
+            <td>
+              <img
+                src="https://cdn.pixabay.com/photo/2024/04/19/04/39/kingfisher-8705377_1280.jpg"
+                alt=""
+                height="100px"
+                width="200px"
+              />
+            </td>
+          </tr>
+          <!-- <tr>
+                <td><label for="img">Image:</label></td>
+                <td><img src="https://cdn.pixabay.com/photo/2024/04/19/04/39/kingfisher-8705377_1280.jpg" alt="" height="100px" width="200px"><br></td>
+            </tr> -->
+          <!-- <label for="img">Image:</label>
+             <img src="https://cdn.pixabay.com/photo/2024/04/19/04/39/kingfisher-8705377_1280.jpg" alt="" height="100px" width="200px"><br> -->
+          <tr>
+            <td><label for="color">Color:</label></td>
+            <td><input type="color" id="color" name="color" /></td>
+          </tr>
+          <!-- <label for="color">Color:</label>
+             <input type="color" id="color" name="color"><br> -->
+          <tr>
+            <td><label for="week">Week:</label></td>
+            <td><input type="week" id="week" name="week" hidden /></td>
+          </tr>
+          <!-- <label for="week">Week:</label>
+             <input type="week" id="week" name="week"><br> -->
+          <tr>
+            <td><label for="months">Months:</label></td>
+            <td><input type="month" id="months" name="months" /></td>
+          </tr>
+          <!-- <label for="months">Months:</label>
+             <input type="month" id="months" name="months"><br> -->
+          <tr>
+            <td><label for="range">Range:</label></td>
+            <td>0<input type="range" id="range" name="range" />100</td>
+          </tr>
+          <!-- <label for="range">Range:</label>
+             0<input type="range" id="range" name="range">100 <br><br> -->
+          <tr>
+            <td><input type="submit" value="SUBMIT" /></td>
+            <td><input type="reset" /></td>
+          </tr>
+          <!-- <input type="button" value="SUBMIT">
+             <input type="reset"><br> -->
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
