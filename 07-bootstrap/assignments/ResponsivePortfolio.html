@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="./images/logo2.png">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="./images/logo2.png" alt="" style="height: 30px;width: 30px;">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-secondary text-center vh-100 d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4">Koushik Madipeddi</h1>
+            <p class="lead">Web Developer | UI Designer | Problem Solver</p>
+            <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3">
+                    <img src="./images/photo.jpg.jpg" class="img-fluid rounded" alt="Profile Image">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        I am a passionate web developer with experience in building responsive
+                        and user-friendly websites using modern technologies.
+                    </p>
+                    <h6>Skills</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">HTML, CSS, JavaScript</li>
+                        <li class="list-group-item">Bootstrap 5</li>
+                        <li class="list-group-item">React Basics</li>
+                        <li class="list-group-item">Git & GitHub</li>
+                        <li class="list-group-item">JAVA & SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTGgkVEdBIstnSHKFq8ZOdZPubHxSmssZhA&s"
+                            class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Chronic-kidney-disease-detection-with-ML</p>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-success">Python</span>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100">
+                        <img src="https://miro.medium.com/v2/resize:fit:1200/1*Y0r18RDjLiMRGbZ2AfFRDg.jpeg" alt="" style="height: 230px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">Medicine-Recommendation-System-using-Machine-learning .</p>
+                            <span class="badge bg-warning text-dark">CSS</span>
+                            <span class="badge bg-primary">Python</span>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100">
+                        <img src="https://www.wikihow.com/images/thumb/3/38/Make-a-To-Do-List-Step-5-Version-3.jpg/v4-460px-Make-a-To-Do-List-Step-5-Version-3.jpg" class="card-img-top" alt="Project" style="height: 230px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">To-Do-List-Python</p>
+                            <span class="badge bg-info">UI</span>
+                            <span class="badge bg-secondary">Design</span>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>        
+    </section>
+
+    
+<section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+  
+            <button class="btn btn-dark" type="submit">Send Message</button>
+          </form>
+        </div>
+  
+        <div class="col-md-6">
+          <h5>Contact Info</h5>
+          <p><i class="bi bi-envelope"></i> koushikmadipeddi@email.com</p>
+          <p><i class="bi bi-telephone"></i> +91 9392999596</p>
+          <p><i class="bi bi-geo-alt"></i> Hyderabad, IND</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Projects</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 text-center">
+          <h6>Follow Me</h6>
+          <i><a href="https://www.instagram.com/koushikmadipeddi/"><img src="https://helios-i.mashable.com/imagery/articles/044e8x59C0ICkJYCjzRv7Yt/hero-image.fill.size_1200x1200.v1650318899.png" style="height: 30px; width: 30px;" alt=""></a></i>
+          <i><a href="https://www.facebook.com/"><img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="" style="height: 30px; width:30px"></a></i>
+        </div>
+  
+        <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+          <p class="mb-0">&copy; 2025 Koushik Madipeddi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+</body>
+
+</html>
