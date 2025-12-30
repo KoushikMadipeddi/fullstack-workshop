@@ -16,7 +16,7 @@ if(!celfa){
 }
 
 let F=0;
-var C=0;
+const C=0;
 
 
 let temp = Number(prompt(`enter temperature`));
