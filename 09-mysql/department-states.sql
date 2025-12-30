@@ -5,4 +5,4 @@ round(avg(salary),2) AS avg_salary,
 max(salary) AS max_salary
 FROM employees
 GROUP BY department
-HAVING COUNT(*)>1;
+HAVING COUNT(*)>2;
