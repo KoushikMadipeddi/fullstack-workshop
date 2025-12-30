@@ -1,4 +1,4 @@
-let original = {
+const original = {
     name: 'John',
     address: {
         city: 'New York',
@@ -7,21 +7,34 @@ let original = {
     hobbies: ['reading', 'gaming']
 };
 
-function deepClone(obj) {
-    let newuser = {...obj};
-    
-    return newuser
-        
-        
-        
+// Arrow function + const
+const deepClone = (obj) => {
+    // Handle non-objects and null
+    if (obj === null || typeof obj !== 'object') {
+        return obj;
+    }
 
-    
-        // Your code here
-}
+    // Handle arrays using map (array method)
+    if (Array.isArray(obj)) {
+        return obj.map(item => deepClone(item));
+    }
 
-let cloned = deepClone(original);
+    // Handle objects
+    const clonedObj = {};
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key) === true) { // strict equality
+            clonedObj[key] = deepClone(obj[key]);
+        }
+    }
+
+    return clonedObj;
+};
+
+const cloned = deepClone(original);
+
 cloned.address.city = 'Boston';
 cloned.hobbies.push('swimming');
 
-console.log(original.address.city);  // Should still be 'New York'
-console.log(original.hobbies);       // Should still be ['reading', 'gaming']
+// Template literals for output
+console.log(`Original city: ${original.address.city}`);  
+console.log(`Original hobbies: ${original.hobbies.join(', ')}`);
