@@ -1,15 +1,57 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-30 12:50
+**Review Date:** 2025-12-30 15:27
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 1
+**Files submitted:** 6
 
 ### Code Review
+
+📄 **department-states.sql**
+   Path: `09-mysql/department-states.sql`
+   Lines: 8
+
+    - ❌ Missing PRIMARY KEY definitions
+
+   **Score: 1/5**
+
+📄 **employee-hierarchy.sql**
+   Path: `09-mysql/employee-hierarchy.sql`
+   Lines: 6
+
+    - ❌ Missing PRIMARY KEY definitions
+
+   **Score: 1/5**
+
+📄 **project-workload.sql**
+   Path: `09-mysql/project-workload.sql`
+   Lines: 11
+
+    - ❌ Missing PRIMARY KEY definitions
+
+   **Score: 1/5**
+
+📄 **top-earners.sql**
+   Path: `09-mysql/top-earners.sql`
+   Lines: 17
+
+    - ❌ Missing PRIMARY KEY definitions
+
+   **Score: 1/5**
+
+📄 **unassigned-resources.sql**
+   Path: `09-mysql/unassigned-resources.sql`
+   Lines: 8
+
+    - ❌ Missing PRIMARY KEY definitions
+
+   **Score: 1/5**
+
+### Topic Score: 5 / 25 (20%)
 
 ---
 
