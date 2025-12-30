@@ -1,15 +1,35 @@
 # Review: 05-css
 
 **Exercise:**  Exercise: Style a Responsive Card Component
-**Review Date:** 2025-12-30 12:11
+**Review Date:** 2025-12-30 12:50
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 1
+**Files submitted:** 3
 
 ### Code Review
+
+📄 **product-card.html**
+   Path: `05-css/product-card.html`
+   Lines: 35
+
+    - ✅ Has `<!DOCTYPE html>`
+    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 4/5**
+
+📄 **styles.css**
+   Path: `05-css/styles.css`
+   Lines: 137
+
+   - ✅ CSS file present
+
+### Topic Score: 4 / 5 (80%)
 
 ---
 

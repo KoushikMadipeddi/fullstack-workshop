@@ -1,7 +1,7 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 12:11
+**Review Date:** 2025-12-30 12:50
 
 ---
 
@@ -59,14 +59,14 @@
 
 📄 **todo.html**
    Path: `06-javascript/challenge-03/todo.html`
-   Lines: 51
+   Lines: 54
 
     - ✅ Has `<!DOCTYPE html>`
     - 💡 Consider using semantic tags (header, nav, main, etc.)
-    - ❌ Missing viewport meta tag
-    - 💡 Add `lang` attribute to `<html>` tag
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **todo.js**
    Path: `06-javascript/challenge-03/todo.js`
@@ -188,15 +188,15 @@
 
 📄 **challenge2.js**
    Path: `06-javascript/Exercise1/challenge2.js`
-   Lines: 32
+   Lines: 33
 
-    - ❌ Uses `var` (1 times) - use `let`/`const`
+    - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - 💡 Consider using arrow functions
     - 💡 Consider using template literals for string interpolation
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 1/5**
+   **Score: 2/5**
 
 📄 **challenge3.html**
    Path: `06-javascript/Exercise1/challenge3.html`
@@ -211,15 +211,15 @@
 
 📄 **challenge3.js**
    Path: `06-javascript/Exercise1/challenge3.js`
-   Lines: 23
+   Lines: 24
 
-    - ❌ Uses `var` (1 times) - use `let`/`const`
+    - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - 💡 Consider using arrow functions
     - 💡 Consider using template literals for string interpolation
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 1/5**
+   **Score: 2/5**
 
 📄 **challenge4.html**
    Path: `06-javascript/Exercise1/challenge4.html`
@@ -382,7 +382,7 @@
 
    **Score: 2/5**
 
-### Topic Score: 101 / 160 (63%)
+### Topic Score: 105 / 160 (65%)
 
 ---
 

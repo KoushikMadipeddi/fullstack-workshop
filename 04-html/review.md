@@ -1,7 +1,7 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 12:11
+**Review Date:** 2025-12-30 12:50
 
 ---
 
@@ -43,17 +43,17 @@
 
 📄 **portfolio-v1.html**
    Path: `04-html/portfolio-v1.html`
-   Lines: 105
+   Lines: 106
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags
     - ✅ Images have `alt` attributes
     - ✅ Has viewport meta tag (mobile-friendly)
-    - 💡 Add `lang` attribute to `<html>` tag
+    - ✅ Has `lang` attribute
     - 📌 **Version 1 (Raw HTML)**
     - ✅ Pure semantic HTML (no styling)
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **portfolio-v2.css**
    Path: `04-html/portfolio-v2.css`
@@ -63,17 +63,17 @@
 
 📄 **portfolio-v2.html**
    Path: `04-html/portfolio-v2.html`
-   Lines: 107
+   Lines: 108
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags
     - ✅ Images have `alt` attributes
     - ✅ Has viewport meta tag (mobile-friendly)
-    - 💡 Add `lang` attribute to `<html>` tag
+    - ✅ Has `lang` attribute
     - 📌 **Version 2 (HTML + CSS3)**
     - ✅ Links to CSS stylesheet
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **portfolio-v3.html**
    Path: `04-html/portfolio-v3.html`
@@ -90,7 +90,7 @@
 
    **Score: 5/5**
 
-### Topic Score: 41 / 45 (91%)
+### Topic Score: 43 / 45 (95%)
 
 ---
 
