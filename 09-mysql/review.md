@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:41
+**Review Date:** 2025-12-31 10:45
 
 ---
 
@@ -112,11 +112,11 @@ Please complete the correct exercise and resubmit.
     - ✅ Uses LEFT JOIN with assignments
     - ✅ Checks for NULL (unassigned employees)
     - ✅ References employee_id for join
-    - 💡 Ensure selecting id, name, department
+    - ✅ Selects required columns (id, name, department)
 
-   **Score: 3/4**
+   **Score: 4/4**
 
-### Challenge Score: 25 / 26 (96%)
+### Challenge Score: 26 / 26 (100%)
 
 
 ---
