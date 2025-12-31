@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:15
+**Review Date:** 2025-12-31 10:20
 
 ---
 
@@ -34,14 +34,71 @@ Please complete the correct exercise and resubmit.
 ✅ Submission appears relevant to the exercise
    Found keywords: employee department salary project assignment 
 
-### Challenge Files
+### Challenge Code Review
 
-- `department-states.sql`
-- `employee-hierarchy.sql`
-- `name-formatter.sql`
-- `project-workload.sql`
-- `top-earners.sql`
-- `unassigned-resources.sql`
+📄 **department-states.sql**
+   Lines: 8
+
+    - ✅ Contains 1 SELECT statement(s)
+    - 💡 Consider using JOINs for related data
+    - ✅ Uses aggregate functions
+    - ✅ Uses GROUP BY for aggregation
+    - ✅ Uses explicit column selection
+
+   **Score: 4/5**
+
+📄 **employee-hierarchy.sql**
+   Lines: 6
+
+    - ✅ Contains 1 SELECT statement(s)
+    - ✅ Uses JOIN operations
+    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
+    - ✅ Uses explicit column selection
+
+   **Score: 3/5**
+
+📄 **name-formatter.sql**
+   Lines: 11
+
+    - ✅ Contains 2 SELECT statement(s)
+    - 💡 Consider using JOINs for related data
+    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
+    - ✅ Uses explicit column selection
+
+   **Score: 2/5**
+
+📄 **project-workload.sql**
+   Lines: 11
+
+    - ✅ Contains 1 SELECT statement(s)
+    - ✅ Uses JOIN operations
+    - ✅ Uses aggregate functions
+    - ✅ Uses GROUP BY for aggregation
+    - ✅ Uses explicit column selection
+
+   **Score: 5/5**
+
+📄 **top-earners.sql**
+   Lines: 17
+
+    - ✅ Contains 2 SELECT statement(s)
+    - 💡 Consider using JOINs for related data
+    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
+    - ✅ Uses explicit column selection
+
+   **Score: 2/5**
+
+📄 **unassigned-resources.sql**
+   Lines: 8
+
+    - ✅ Contains 1 SELECT statement(s)
+    - ✅ Uses JOIN operations
+    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
+    - ✅ Uses explicit column selection
+
+   **Score: 3/5**
+
+### Challenge Score: 19 / 30 (63%)
 
 
 ---
