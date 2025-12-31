@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:27
+**Review Date:** 2025-12-31 10:33
 
 ---
 
@@ -37,65 +37,86 @@ Please complete the correct exercise and resubmit.
 ### Challenge Code Review
 
 📄 **department-states.sql**
-   Lines: 8
+   Lines: 18
 
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses aggregate functions
-    - ✅ Uses GROUP BY for aggregation
-    - ✅ Uses explicit column selection
+    📋 **Challenge 1: Department Stats**
+    Expected: department, employee_count, avg_salary, max_salary
 
-   **Score: 4/4**
+    - ✅ Groups by department
+    - ✅ Counts employees (COUNT(*))
+    - ✅ Calculates average salary
+    - ✅ Finds maximum salary
+    - ✅ Filters departments with >2 employees (HAVING)
+
+   **Score: 5/5**
 
 📄 **employee-hierarchy.sql**
    Lines: 6
 
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
+    📋 **Challenge 2: Employee Hierarchy**
+    Expected: employee_name, manager_name (self-join)
 
-   **Score: 3/5**
+    - ✅ Uses self-join on employees table
+    - ✅ Uses LEFT JOIN (handles employees without managers)
+    - ✅ Joins on manager_id = id
+    - ✅ Uses table aliases
+
+   **Score: 4/4**
 
 📄 **name-formatter.sql**
    Lines: 11
 
-    - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
+    📋 **Challenge 6: Employee Name Formatter**
+    Expected: formatted_name, email, initials (string functions)
 
-   **Score: 2/4**
+    - ✅ Uses UPPER() function
+    - ✅ Uses CONCAT() for string building
+    - ✅ Uses LEFT() for initials
+    - ✅ Generates email format
+
+   **Score: 4/4**
 
 📄 **project-workload.sql**
    Lines: 11
 
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - ✅ Uses aggregate functions
-    - ✅ Uses GROUP BY for aggregation
-    - ✅ Uses explicit column selection
+    📋 **Challenge 3: Project Workload**
+    Expected: project_name, budget, team_size, total_hours
+
+    - ✅ Joins projects with assignments
+    - ✅ Counts team members
+    - ✅ Sums allocated hours
+    - ✅ Filters budget > 50000
+    - ✅ Orders by total hours descending
 
    **Score: 5/5**
 
 📄 **top-earners.sql**
    Lines: 17
 
-    - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
+    📋 **Challenge 4: Top Earners**
+    Expected: department, name, salary, rank_in_dept (window function)
 
-   **Score: 2/4**
+    - ✅ Uses window ranking function
+    - ✅ Partitions by department
+    - ✅ Orders by salary descending
+    - ✅ Filters top 3 earners
+
+   **Score: 4/4**
 
 📄 **unassigned-resources.sql**
    Lines: 8
 
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
+    📋 **Challenge 5: Unassigned Resources**
+    Expected: id, name, department (employees not in any project)
 
-   **Score: 3/5**
+    - ✅ Uses LEFT JOIN with assignments
+    - ✅ Checks for NULL (unassigned employees)
+    - ✅ References employee_id for join
+    - 💡 Ensure selecting id, name, department
 
-### Challenge Score: 19 / 27 (70%)
+   **Score: 3/4**
+
+### Challenge Score: 25 / 26 (96%)
 
 
 ---
