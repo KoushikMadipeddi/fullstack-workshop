@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:05
+**Review Date:** 2025-12-31 10:15
 
 ---
 
@@ -27,9 +27,22 @@ Please complete the correct exercise and resubmit.
 
 ## Challenge
 
-**Status:** ⚠️ Not submitted
+**Status:** ✅ Submitted (6 files)
 
-Submit to: `09-mysql/challenge-01/`
+### Challenge Relevance Check
+
+✅ Submission appears relevant to the exercise
+   Found keywords: employee department salary project assignment 
+
+### Challenge Files
+
+- `department-states.sql`
+- `employee-hierarchy.sql`
+- `name-formatter.sql`
+- `project-workload.sql`
+- `top-earners.sql`
+- `unassigned-resources.sql`
+
 
 ---
 

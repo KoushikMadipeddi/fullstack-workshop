@@ -1,7 +1,7 @@
 # Review: 23-docker
 
 **Exercise:**  Exercise: Docker - Multi-Container Application
-**Review Date:** 2025-12-31 10:05
+**Review Date:** 2025-12-31 10:15
 
 ---
 
@@ -58,7 +58,7 @@ Relevance check not configured for this topic
 
 **Status:** ⚠️ Not submitted
 
-Submit to: `23-docker/challenge-01/`
+Submit to: `23-docker/challenges/`
 
 ---
 
