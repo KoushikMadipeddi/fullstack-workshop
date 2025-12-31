@@ -1,85 +1,27 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 09:38
+**Review Date:** 2025-12-31 09:50
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 7
+**Files submitted:** 6
 
-### Code Review
+### Relevance Check
 
-📄 **department-states.sql**
-   Path: `09-mysql/department-states.sql`
-   Lines: 8
+❌ **Submission does NOT match exercise requirements**
+   Expected keywords: customer product category order ecommerce schema queries
+   Found only: order 
+   **Please review the exercise requirements and resubmit**
 
-    - ✅ Contains 1 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
-    - ✅ Uses aggregate functions
-    - ✅ Uses GROUP BY for aggregation
-    - ✅ Uses explicit column selection
+### ⚠️ Review Skipped
 
-   **Score: 4/5**
+The submission does not appear to match the exercise requirements.
+Please complete the correct exercise and resubmit.
 
-📄 **employee-hierarchy.sql**
-   Path: `09-mysql/employee-hierarchy.sql`
-   Lines: 6
-
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
-
-   **Score: 3/5**
-
-📄 **name-formatter.sql**
-   Path: `09-mysql/name-formatter.sql`
-   Lines: 11
-
-    - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
-
-   **Score: 2/5**
-
-📄 **project-workload.sql**
-   Path: `09-mysql/project-workload.sql`
-   Lines: 11
-
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - ✅ Uses aggregate functions
-    - ✅ Uses GROUP BY for aggregation
-    - ✅ Uses explicit column selection
-
-   **Score: 5/5**
-
-📄 **top-earners.sql**
-   Path: `09-mysql/top-earners.sql`
-   Lines: 17
-
-    - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
-
-   **Score: 2/5**
-
-📄 **unassigned-resources.sql**
-   Path: `09-mysql/unassigned-resources.sql`
-   Lines: 8
-
-    - ✅ Contains 1 SELECT statement(s)
-    - ✅ Uses JOIN operations
-    - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
-    - ✅ Uses explicit column selection
-
-   **Score: 3/5**
-
-### Topic Score: 19 / 30 (63%)
+### Topic Score: 0 / 100 (0%)
 
 ---
 
