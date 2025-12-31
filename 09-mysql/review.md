@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:20
+**Review Date:** 2025-12-31 10:27
 
 ---
 
@@ -40,12 +40,11 @@ Please complete the correct exercise and resubmit.
    Lines: 8
 
     - ✅ Contains 1 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
     - ✅ Uses aggregate functions
     - ✅ Uses GROUP BY for aggregation
     - ✅ Uses explicit column selection
 
-   **Score: 4/5**
+   **Score: 4/4**
 
 📄 **employee-hierarchy.sql**
    Lines: 6
@@ -61,11 +60,10 @@ Please complete the correct exercise and resubmit.
    Lines: 11
 
     - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
     - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
     - ✅ Uses explicit column selection
 
-   **Score: 2/5**
+   **Score: 2/4**
 
 📄 **project-workload.sql**
    Lines: 11
@@ -82,11 +80,10 @@ Please complete the correct exercise and resubmit.
    Lines: 17
 
     - ✅ Contains 2 SELECT statement(s)
-    - 💡 Consider using JOINs for related data
     - 💡 Consider using aggregate functions (COUNT, SUM, etc.)
     - ✅ Uses explicit column selection
 
-   **Score: 2/5**
+   **Score: 2/4**
 
 📄 **unassigned-resources.sql**
    Lines: 8
@@ -98,7 +95,7 @@ Please complete the correct exercise and resubmit.
 
    **Score: 3/5**
 
-### Challenge Score: 19 / 30 (63%)
+### Challenge Score: 19 / 27 (70%)
 
 
 ---
