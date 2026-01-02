@@ -1,19 +1,19 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:53
+**Review Date:** 2026-01-02 13:56
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 6
+**Files submitted:** 7
 
 ### Relevance Check
 
 ❌ **Submission does NOT match exercise requirements**
    Expected keywords: customer product category order ecommerce schema queries
-   Found only: order 
+   Found only: category order 
    **Please review the exercise requirements and resubmit**
 
 ### ⚠️ Review Skipped
@@ -27,7 +27,7 @@ Please complete the correct exercise and resubmit.
 
 ## Challenge
 
-**Status:** ✅ Submitted (6 files)
+**Status:** ✅ Submitted (7 files)
 
 ### Challenge Relevance Check
 
@@ -90,6 +90,16 @@ Please complete the correct exercise and resubmit.
 
    **Score: 5/5**
 
+📄 **tenure-function.sql**
+   Lines: 60
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+
+   **Score: 2/3**
+
 📄 **top-earners.sql**
    Lines: 17
 
@@ -116,7 +126,7 @@ Please complete the correct exercise and resubmit.
 
    **Score: 4/4**
 
-### Challenge Score: 26 / 26 (100%)
+### Challenge Score: 28 / 29 (96%)
 
 
 ---
