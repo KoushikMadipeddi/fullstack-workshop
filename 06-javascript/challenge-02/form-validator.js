@@ -1,53 +1,74 @@
-const form = document.querySelector('form');
-const input = document.querySelectorAll('input');
+const form = document.getElementById('myForm');
 
-// const usernameText = document.getElementsByClassName('usernameText');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
 
-const user = document.getElementById('exampleInputUsername');
-user.addEventListener('blur',function(){
-    const userval = document.getElementById('exampleInputUsername').value;
-    const userregex = /^[a-zA-Z0-9]{3,15}$/;
-    if(!userregex.test(userval)){
-        document.getElementById('usernameText').textContent = 'enter valid username';
-        console.log(document.getElementById('usernameText'));
-        document.getElementById('usernameText').style.color='red';
-    }
-    else{
-        input.style.color= green;
-        
-    }
-})
-const email = document.getElementById('exampleInputEmail1');
-email.addEventListener('blur',function(){
-    const emailval = document.getElementById('exampleInputEmail1').value;
-    const emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if(emailregex.test(emailval)){
-        
-         document.getElementById('emailText').textContent = 'enter valid email';
-         console.log(document.getElementById('emailText'));
-         document.getElementById('emailText').style.color='red';
-         console.log("email worked?");
-         
-        }else{
-            
-        console.log("email didnt worked!");
-        
-    }
-})
-const Password = document.getElementById('exampleInputPassword1');
-Password.addEventListener('blur',function(){
-    const passwordlval = document.getElementById('exampleInputPassword1').value;
-    const passwordregex = /^[a-zA-Z]{8,}$/;
-    if(passwordregex.test(passwordlval)){
-        document.getElementById('passwordText').textContent = 'enter valid password';      
-        document.getElementById('passwordText').style.color='red';
-        
-        
-        console.log("password worked?");
-    }else{
-        console.log("password didnt worked!");
-            }
-            
-})
+const usernameText = document.getElementById('usernameText');
+const emailText = document.getElementById('emailText');
+const passwordText = document.getElementById('passwordText');
+const confirmPasswordText = document.getElementById('confirmPasswordText');
 
+/* ---------- Username ---------- */
+username.addEventListener('blur', () => {
+  const regex = /^[a-zA-Z0-9]{3,15}$/;
 
+  if (!regex.test(username.value.trim())) {
+    usernameText.textContent = 'Username must be 3–15 letters or numbers';
+    usernameText.style.color = 'red';
+  } else {
+    usernameText.textContent = 'Valid username';
+    usernameText.style.color = 'green';
+  }
+});
+
+/* ---------- Email ---------- */
+email.addEventListener('blur', () => {
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (!regex.test(email.value.trim())) {
+    emailText.textContent = 'Enter a valid email address';
+    emailText.style.color = 'red';
+  } else {
+    emailText.textContent = 'Valid email';
+    emailText.style.color = 'green';
+  }
+});
+
+/* ---------- Password ---------- */
+password.addEventListener('blur', () => {
+  const regex = /^[a-zA-Z]{8,}$/;
+
+  if (!regex.test(password.value)) {
+    passwordText.textContent = 'Password must be at least 8 letters';
+    passwordText.style.color = 'red';
+  } else {
+    passwordText.textContent = 'Valid password';
+    passwordText.style.color = 'green';
+  }
+});
+
+/* ---------- Confirm Password ---------- */
+confirmPassword.addEventListener('blur', () => {
+  if (confirmPassword.value !== password.value || confirmPassword.value === '') {
+    confirmPasswordText.textContent = 'Passwords do not match';
+    confirmPasswordText.style.color = 'red';
+  } else {
+    confirmPasswordText.textContent = 'Passwords match';
+    confirmPasswordText.style.color = 'green';
+  }
+});
+
+/* ---------- Prevent Submit if Invalid ---------- */
+form.addEventListener('submit', (e) => {
+  if (
+    usernameText.style.color !== 'green' ||
+    emailText.style.color !== 'green' ||
+    passwordText.style.color !== 'green' ||
+    confirmPasswordText.style.color !== 'green'
+  ) {
+    e.preventDefault();
+    alert('Please fix the errors before submitting');
+  }
+});
