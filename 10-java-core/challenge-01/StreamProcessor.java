@@ -15,5 +15,3 @@ public class StreamProcessor {
         System.out.println(averageOfEvens(Arrays.asList(1, 3, 5)));
     }
 }
-
-

@@ -1,7 +1,7 @@
 # Review: 01-linux
 
 **Exercise:**  Exercise: Log File Analyzer Script
-**Review Date:** 2025-12-31 09:50
+**Review Date:** 2026-01-05 15:04
 
 ---
 
@@ -49,7 +49,7 @@ Relevance check not configured for this topic
 
 **Status:** ⚠️ Not submitted
 
-Submit to: `01-linux/challenge-01/`
+Submit to: `01-linux/challenges/` or `01-linux/challenge-01/`, `01-linux/challenge-02/`, etc.
 
 ---
 
